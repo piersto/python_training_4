@@ -20,6 +20,7 @@ def test_modify_contact_middlename(app):
     old_contacts = app.contact.get_contact_list()
     contact = Contact(middlename='II', birthday='15')
     contact.id = old_contacts[0].id
+    contact.firstname = old_contacts[0].id
     app.contact.modify_first_contact(contact)
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
