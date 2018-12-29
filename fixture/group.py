@@ -1,5 +1,6 @@
 from model.group import Group
 
+
 class GroupHelper:
 
     def __init__(self, app):
@@ -46,7 +47,6 @@ class GroupHelper:
         self.return_to_groups_page()
         self.group_cache = None
 
-
     def select_first_group(self):
         wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
@@ -64,8 +64,6 @@ class GroupHelper:
         # return to group page
         self.return_to_groups_page()
         self.group_cache = None
-
-
 
     def count(self):
         wd = self.app.wd
