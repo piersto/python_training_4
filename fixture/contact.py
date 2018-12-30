@@ -90,4 +90,3 @@ class ContactHelper:
             id = cells[0].find_element_by_name("selected[]").get_attribute('value')
             contacts.append(Contact(firstname=firstname, lastname=lastname, id=id))
         return contacts
-

@@ -41,3 +41,5 @@ def test_modify_contact_birth_month(app):
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
+
+
