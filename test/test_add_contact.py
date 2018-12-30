@@ -19,5 +19,3 @@ def test_add_contact(app):
     app.contact.fill_in_contact_form(Contact(firstname='', middlename='', lastname=''))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) + 1 == len(new_contacts)"""
-
-
