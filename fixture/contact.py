@@ -19,6 +19,7 @@ class ContactHelper:
         self.specify_drop_downs(contact)
         self.submit_contact_form()
         self.app.return_on_home_page()
+        self.contact_cache = None
 
     def specify_drop_downs(self, contact):
         wd = self.app.wd
